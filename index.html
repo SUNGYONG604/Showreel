@@ -34,12 +34,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
         }
 
         .logo img {
@@ -48,6 +48,9 @@
         }
 
         .logo-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 18px;
             font-weight: 600;
             color: #111;
@@ -315,8 +318,8 @@
         <nav>
             <div class="logo">
                 <img src="logo.png" alt="Early High Logo">
-                <span class="logo-text">SUNG YONG</span>
             </div>
+            <span class="logo-text">SUNG YONG</span>
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#awards">AWARDS</a></li>
