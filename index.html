@@ -34,7 +34,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
         }
 
         .logo {
@@ -45,15 +44,6 @@
         .logo img {
             height: 40px;
             width: auto;
-        }
-
-        .logo-text {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 18px;
-            font-weight: 600;
-            color: #111;
         }
 
         .nav-links {
@@ -279,6 +269,15 @@
         }
 
         @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 11px;
+            }
+
             .hero {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -286,11 +285,6 @@
 
             .hero-content h1 {
                 font-size: 36px;
-            }
-
-            .nav-links {
-                gap: 15px;
-                font-size: 12px;
             }
 
             .section-title {
@@ -319,7 +313,6 @@
             <div class="logo">
                 <img src="logo.png" alt="Early High Logo">
             </div>
-            <span class="logo-text">SUNG YONG</span>
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#awards">AWARDS</a></li>
@@ -507,9 +500,6 @@
                 <iframe src="https://www.youtube.com/embed/_znjGT9QRyw" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-item">
-                <iframe src="https://www.youtube.com/embed/-530gP2sS4U" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-item">
                 <iframe src="https://www.youtube.com/embed/KHOk0jthrfk" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-item">
@@ -526,12 +516,6 @@
             </div>
             <div class="video-item">
                 <iframe src="https://www.youtube.com/embed/SwGoboBxKaQ" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-item">
-                <iframe src="https://www.youtube.com/embed/5qC5clkHWoE" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-item">
-                <iframe src="https://www.youtube.com/embed/N1_njDiCz3Q" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
